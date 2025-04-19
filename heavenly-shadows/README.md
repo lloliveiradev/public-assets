@@ -8,16 +8,19 @@ O **Sombras Celestes** é um site literário dedicado à coletânea de poesias *
 ## 🛠️ Tecnologias
 
 ### Frontend
-- [Next.js](https://nextjs.org) - Framework React para aplicações web
-- [React.js](https://reactjs.org) - Biblioteca JavaScript para interfaces
-- [TailwindCSS](https://tailwindcss.com) - Framework CSS utilitário
-- [AOS](https://michalsnik.github.io/aos/) - Biblioteca de animações
+- [Next.js 15](https://nextjs.org) - Framework React para aplicações web
+- [React 19](https://reactjs.org) - Biblioteca JavaScript para interfaces
+- [TailwindCSS 4](https://tailwindcss.com) - Framework CSS utilitário
+- [Framer Motion](https://www.framer.com/motion/) - Biblioteca de animações
 - [ShadCN](https://ui.shadcn.com) - Componentes UI modernos
+- [React Query](https://tanstack.com/query/latest) - Gerenciamento de estado e cache
+- [React Hook Form](https://react-hook-form.com) - Gerenciamento de formulários
+- [Zod](https://zod.dev) - Validação de esquemas
 
 ### Backend
-- [NestJS](https://nestjs.com) - Node.js framework
-- [TypeScript](https://www.typescriptlang.org) - Typed programming language
-- [Firebase Firestore](https://firebase.google.com/docs/firestore) - NoSQL database
+- [Firebase Firestore](https://firebase.google.com/docs/firestore) - Banco de dados NoSQL
+- [Firebase Admin SDK](https://firebase.google.com/docs/admin/setup) - SDK para autenticação e gerenciamento
+- [MailerSend](https://www.mailersend.com) - Serviço de envio de emails
 
 ### Infraestrutura
 - [Vercel](https://vercel.com) - Plataforma de hospedagem e deploy contínuo
@@ -26,17 +29,15 @@ O **Sombras Celestes** é um site literário dedicado à coletânea de poesias *
 
 ```
 heavenly-shadows/
-├── app/            # Páginas principais e rotas
-│   ├── page.tsx    # Página inicial
-│   └── layout.tsx  # Layout principal
-├── components/     # Componentes reutilizáveis
-│   ├── ui/        # Componentes de interface
-│   └── sections/  # Seções da página
-├── styles/        # Configurações de estilo
-│   └── globals.css # Estilos globais
-└── public/        # Recursos estáticos
-    ├── images/    # Imagens e ícones
-    └── fonts/     # Fontes personalizadas
+├── app/            # Páginas e rotas da aplicação
+│   ├── api/       # Endpoints da API
+│   ├── actions/   # Ações do servidor
+│   ├── components/# Componentes reutilizáveis
+│   ├── hooks/     # Hooks personalizados
+│   ├── lib/       # Utilitários e configurações
+│   ├── services/  # Serviços externos
+│   ├── types/     # Definições de tipos
+│   └── styles/    # Estilos globais
 ```
 
 ## 🚀 Começando
@@ -44,7 +45,6 @@ heavenly-shadows/
 ### Pré-requisitos
 - Node.js (versão 16 ou superior)
 - npm ou yarn
-- Conta Firebase
 
 ### Instalação
 
@@ -62,24 +62,16 @@ npm install
 3. Configure as variáveis de ambiente:
 ```bash
 # .env.local
-NEXT_PUBLIC_FIREBASE_API_KEY=your-api-key
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your-auth-domain
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=your-project-id
+FIREBASE_PRIVATE_KEY=your-private-key
+FIREBASE_PROJECT_ID=your-project-id
+FIREBASE_CLIENT_EMAIL=your-client-email
+MAILER_SEND_KEY=your-mailer-send-key
 ```
 
 4. Inicie o servidor de desenvolvimento:
 ```bash
 npm run dev
 ```
-
-5. Para deploy na Vercel:
-```bash
-vercel
-```
-
-## 🌐 Acesso
-
-O site está disponível em: [Sombras Celestes](https://heavenly-shadows.vercel.app/)
 
 ## 📄 Licença
 
