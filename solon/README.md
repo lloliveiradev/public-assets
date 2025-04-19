@@ -1,164 +1,129 @@
-# Solon - Smart Notes
+# Solon - Notas Inteligentes
 
-<div align="center">
-  <div align="center" style="background-color: #fff; padding-top: 10px; padding-bottom: 5px">
-    <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/full_logo.png" alt="Solon Logo" width="150"/>
-  </div>
-  
-  [![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)](https://expo.dev)
-  [![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactnative.dev)
-  [![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)](https://nestjs.com)
-  [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
-  [![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
-  [![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)](https://cloud.google.com)
-</div>
+Solon é um aplicativo de notas inteligentes que combina o poder da IA com uma interface móvel moderna. O aplicativo oferece uma experiência intuitiva para criar, organizar e gerenciar notas, com recursos avançados como reconhecimento de voz, processamento de texto com IA e sincronização em nuvem.
 
-## 📱 About the Project
+## 🚀 Visão Geral da Arquitetura
 
-Solon is a smart notes application that combines the power of AI with a modern mobile interface. The app offers an intuitive experience for creating, organizing, and managing notes, with advanced features such as voice recognition, AI-powered text processing, and cloud synchronization.
-
-## 🚀 Architecture Overview
-
-The project is structured in three main parts:
+O projeto é estruturado em três partes principais:
 
 ### Frontend (Mobile)
-- Built with React Native and Expo
-- Modern UI with TailwindCSS
-- Offline-first approach with AsyncStorage
-- Voice recognition and transcription
-- AI-powered text processing
+- Desenvolvido com React Native e Expo
+- Interface moderna com TailwindCSS
+- Abordagem offline-first com AsyncStorage
+- Reconhecimento e transcrição de voz
+- Processamento de texto com IA
 
 ### Backend (API)
-- NestJS framework
-- Firebase integration for authentication and database
-- Google Cloud services for AI features
-- RESTful API architecture
+- Framework NestJS
+- Integração com Firebase para autenticação e banco de dados
+- Serviços do Google Cloud para recursos de IA
+- Arquitetura RESTful API
 
-### Core (Shared)
-- Shared types and interfaces
-- Common utilities and constants
-- Cross-platform business logic
+### Core (Compartilhado)
+- Tipos e interfaces compartilhados
+- Utilitários e constantes comuns
+- Lógica de negócios multiplataforma
 
-## 🛠️ Technologies
+## 🛠️ Tecnologias
 
 ### Frontend
-- [Expo](https://expo.dev) - Platform for React Native app development
-- [React Native](https://reactnative.dev) - Mobile development framework
-- [TypeScript](https://www.typescriptlang.org) - Typed programming language
-- [TailwindCSS](https://tailwindcss.com) - CSS framework for styling
-- [React Navigation](https://reactnavigation.org) - Screen navigation
-- [AsyncStorage](https://react-native-async-storage.github.io/async-storage) - Local storage
-- [React Native Voice](https://github.com/react-native-voice/voice) - Voice recognition
-- [Expo Router](https://docs.expo.dev/router/introduction) - File-based routing
+- [Expo](https://expo.dev) - Plataforma para desenvolvimento de apps React Native
+- [React Native](https://reactnative.dev) - Framework de desenvolvimento móvel
+- [TypeScript](https://www.typescriptlang.org) - Linguagem de programação tipada
+- [TailwindCSS](https://tailwindcss.com) - Framework CSS para estilização
+- [React Navigation](https://reactnavigation.org) - Navegação entre telas
+- [AsyncStorage](https://react-native-async-storage.github.io/async-storage) - Armazenamento local
+- [React Native Voice](https://github.com/react-native-voice/voice) - Reconhecimento de voz
+- [Expo Router](https://docs.expo.dev/router/introduction) - Roteamento baseado em arquivos
 
 ### Backend
-- [NestJS](https://nestjs.com) - Node.js framework
-- [TypeScript](https://www.typescriptlang.org) - Typed programming language
-- [Firebase](https://firebase.google.com) - Development platform
-  - [Firestore](https://firebase.google.com/docs/firestore) - NoSQL database
-  - [Firebase Auth](https://firebase.google.com/docs/auth) - User authentication
-- [Google Cloud](https://cloud.google.com) - Cloud services
-  - [Google Speech-to-Text](https://cloud.google.com/speech-to-text) - Audio transcription API
-  - [Google Generative AI](https://cloud.google.com/vertex-ai/generative-ai) - Gemini 1.5 Flash model
-- [Jest](https://jestjs.io) - Testing framework
+- [NestJS](https://nestjs.com) - Framework Node.js
+- [TypeScript](https://www.typescriptlang.org) - Linguagem de programação tipada
+- [Firebase](https://firebase.google.com) - Plataforma de desenvolvimento
+  - [Firestore](https://firebase.google.com/docs/firestore) - Banco de dados NoSQL
+  - [Firebase Auth](https://firebase.google.com/docs/auth) - Autenticação de usuários
+- [Google Cloud](https://cloud.google.com) - Serviços em nuvem
+  - [Google Speech-to-Text](https://cloud.google.com/speech-to-text) - API de transcrição de áudio
+  - [Google Generative AI](https://cloud.google.com/vertex-ai/generative-ai) - Modelo Gemini 1.5 Flash
+- [Jest](https://jestjs.io) - Framework de testes
 
 ### Core
-- [TypeScript](https://www.typescriptlang.org) - Shared types and interfaces
-- [Jest](https://jestjs.io) - Testing utilities
+- [TypeScript](https://www.typescriptlang.org) - Tipos e interfaces compartilhados
+- [Jest](https://jestjs.io) - Utilitários de teste
 
-## 🛠️ Key Features
+## 🛠️ Principais Recursos
 
-### 📝 Note Edition
-<div align="center">
-  <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/note.jpeg" alt="Note Edition" height="600"/>
-</div>
+### 📝 Edição de Notas
+- Suporte a reconhecimento de voz
+- Tags e marcadores para buscas precisas
+- Sincronização em tempo real
 
-- Voice recognition support
-- Tags and markers for precise searches
-- Real-time synchronization
+### 🗂️ Organização Inteligente
+- **Resumo**: Gera resumos concisos mantendo as ideias principais
+- **Correção de Texto**: Corrige automaticamente erros gramaticais e ortográficos
+- **Extração de Tópicos**: Identifica e extrai os principais tópicos das notas
+- **Formalização de Texto**: Transforma o texto para um tom mais formal quando necessário
 
-### 🗂️ Smart Organization
-<div align="center">
-  <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/formalize.jpeg" alt="Smart Organization" height="600"/>
-</div>
+## 📋 Mapeamento de Telas
 
-- **Summarization**: Generates concise summaries while maintaining key ideas
-- **Text Correction**: Automatically fixes grammar and spelling errors
-- **Topic Extraction**: Identifies and extracts main topics from notes
-- **Text Formalization**: Transforms text to a more formal tone when needed
+### Autenticação
+- Autenticação segura com Firebase Auth
+- Login com email e senha
+- Processo de registro simples
 
-## 📋 Screen Mapping
+### Recursos Principais
+- Dashboard com notas recentes
+- Funcionalidade de busca inteligente
+- Arquivo para organizar notas
+- Perfil do usuário e configurações
 
-### Authentication
-<div align="center">
-  <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/login.jpeg" alt="Login" height="600"/>
-  <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/sign-up.jpeg" alt="Sign Up" height="600"/>
-</div>
-
-- Secure authentication with Firebase Auth
-- Email and password login
-- Simple registration process
-
-### Main Features
-<div align="center">
-  <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/home.jpeg" alt="Home" height="600"/>
-  <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/search.jpeg" alt="Search" height="600"/>
-  <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/archive.jpeg" alt="Archive" height="600"/>
-  <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/profile.jpeg" alt="Profile" height="600"/>
-</div>
-
-- Dashboard with recent notes
-- Smart search functionality
-- Archive for organizing notes
-- User profile and settings
-
-## 🚀 Project Structure
+## 🚀 Estrutura do Projeto
 
 ```
 solon/
-├── frontend/         # Mobile application
-│   ├── app/         # Main routes and pages
-│   ├── components/  # Reusable components
-│   ├── assets/      # Static resources
-│   ├── context/     # React contexts
-│   ├── utils/       # Utility functions
-│   ├── constants/   # Constants and configurations
-│   └── functions/   # Business functions
+├── frontend/         # Aplicativo móvel
+│   ├── app/         # Rotas e páginas principais
+│   ├── components/  # Componentes reutilizáveis
+│   ├── assets/      # Recursos estáticos
+│   ├── context/     # Contextos React
+│   ├── utils/       # Funções utilitárias
+│   ├── constants/   # Constantes e configurações
+│   └── functions/   # Funções de negócios
 │
-├── backend/         # API server
+├── backend/         # Servidor API
 │   ├── src/
-│   │   ├── annotations/  # Notes module
-│   │   ├── auth/        # Authentication
-│   │   ├── config/      # Global configurations
-│   │   ├── firebase/    # Firebase integration
-│   │   ├── gemini/      # AI processing
-│   │   ├── roles/       # Role management
-│   │   ├── transcription/ # Voice services
-│   │   └── users/       # User management
+│   │   ├── annotations/  # Módulo de notas
+│   │   ├── auth/        # Autenticação
+│   │   ├── config/      # Configurações globais
+│   │   ├── firebase/    # Integração Firebase
+│   │   ├── gemini/      # Processamento de IA
+│   │   ├── roles/       # Gerenciamento de funções
+│   │   ├── transcription/ # Serviços de voz
+│   │   └── users/       # Gerenciamento de usuários
 │
-└── core/           # Shared code
-    └── src/        # Shared types and utilities
+└── core/           # Código compartilhado
+    └── src/        # Tipos e utilitários compartilhados
 ```
 
-## 🚀 Getting Started
+## 🚀 Começando
 
-### Prerequisites
-- Node.js (version 18 or higher)
-- npm or yarn
+### Pré-requisitos
+- Node.js (versão 18 ou superior)
+- npm ou yarn
 - Expo CLI
-- Firebase account
-- Google Cloud account
-- Android/iOS emulator or physical device
+- Conta Firebase
+- Conta Google Cloud
+- Emulador Android/iOS ou dispositivo físico
 
-### Installation
+### Instalação
 
-1. Clone the repository:
+1. Clone o repositório:
 ```bash
-git clone [REPOSITORY_URL]
+git clone [URL_DO_REPOSITÓRIO]
 cd solon
 ```
 
-2. Install dependencies for each part:
+2. Instale as dependências para cada parte:
 ```bash
 # Frontend
 cd frontend
@@ -173,18 +138,18 @@ cd ../core
 npm install
 ```
 
-3. Configure environment variables:
+3. Configure as variáveis de ambiente:
 ```bash
 # Backend .env
-APP_CREDENTIALS='{google-cloud-credentials}'
-API_KEY='your-api-key'
-PROJECT_ID='your-project-id'
-PROJECT_LOCATION='your-location'
-FB_CREDENTIALS='{firebase-credentials}'
-FB_API_KEY='your-firebase-api-key'
+APP_CREDENTIALS='{credenciais-google-cloud}'
+API_KEY='sua-chave-api'
+PROJECT_ID='seu-id-de-projeto'
+PROJECT_LOCATION='sua-localização'
+FB_CREDENTIALS='{credenciais-firebase}'
+FB_API_KEY='sua-chave-api-firebase'
 ```
 
-4. Start the development servers:
+4. Inicie os servidores de desenvolvimento:
 ```bash
 # Backend
 cd backend
@@ -195,16 +160,16 @@ cd frontend
 npm start
 ```
 
-## 🤝 Contributing
+## 🤝 Contribuindo
 
-Contributions are welcome! Please follow these steps:
+Contribuições são bem-vindas! Por favor, siga estes passos:
 
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Faça um fork do projeto
+2. Crie sua branch de feature (`git checkout -b feature/FeatureIncrivel`)
+3. Faça commit das suas alterações (`git commit -m 'Adiciona uma FeatureIncrivel'`)
+4. Faça push para a branch (`git push origin feature/FeatureIncrivel`)
+5. Abra um Pull Request
 
-## 📄 License
+## 📄 Licença
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
