@@ -1,19 +1,3 @@
-# Sombras Celestes
-
-<div align="center">
-  <div align="center" style="padding-top: 10px; padding-bottom: 5px">
-    <img src="https://github.com/lloliveiradev/public-assets/raw/main/heavenly-shadows/logo.png" alt="Sombras Celestes Logo" width="150"/>
-  </div>
-  
-  [![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org)
-  [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org)
-  [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
-  [![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
-  [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com)
-  [![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)](https://nestjs.com)
-  [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
-</div>
-
 #### Acesse o website através do link abaixo:
 - [https://heavenly-shadows.web.app/](https://heavenly-shadows.web.app/)
 

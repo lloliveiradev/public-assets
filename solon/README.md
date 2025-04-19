@@ -1,5 +1,3 @@
-# Solon - Notas Inteligentes
-
 Solon é um aplicativo de notas inteligentes que combina o poder da IA com uma interface móvel moderna. O aplicativo oferece uma experiência intuitiva para criar, organizar e gerenciar notas, com recursos avançados como reconhecimento de voz, processamento de texto com IA e sincronização em nuvem.
 
 ## 🚀 Visão Geral da Arquitetura
