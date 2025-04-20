@@ -27,7 +27,7 @@ O **Sombras Celestes** é um site literário dedicado à coletânea de poesias *
 
 ## 🎨 Estrutura do Projeto
 
-```
+```bash
 heavenly-shadows/
 ├── app/            # Páginas e rotas da aplicação
 │   ├── api/       # Endpoints da API
