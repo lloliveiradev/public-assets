@@ -77,7 +77,7 @@ O projeto é estruturado em três partes principais:
 
 ## 🚀 Estrutura do Projeto
 
-```
+```bash
 solon/
 ├── frontend/         # Aplicativo móvel
 │   ├── app/         # Rotas e páginas principais
