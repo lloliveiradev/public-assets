@@ -1,5 +1,4 @@
-#### Acesse o website através do link abaixo:
-- [https://heavenly-shadows.web.app/](https://heavenly-shadows.web.app/)
+#### Acesse o website através do link: [https://heavenly-shadows.web.app/](https://heavenly-shadows.web.app/)
 
 ## 📚 Sobre o Projeto
 
