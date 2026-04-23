@@ -13,13 +13,24 @@ Na mitologia grega, Kairos representa o momento certo, a oportunidade perfeita. 
 
 O projeto segue uma arquitetura de microserviços com separação clara entre frontend e backend:
 
-```mermaid
-graph TD
-    A[Mobile Apps (iOS/Android/Web)] --> B[REST API (HTTP/JSON)]
-    B --> C[API Backend (Go)]
-    C --> D[Chi Router + Firebase Admin SDK]
-    D --> E[Firebase Authentication]
-    E --> F[Cloud Firestore (NoSQL Database)]
+```
+┌─────────────────────────────────────────────────────────────┐
+│                     Mobile Apps (iOS/Android/Web)           │
+│              React Native + Expo + TypeScript               │
+└───────────────────────┬─────────────────────────────────────┘
+                        │ REST API
+                        │ (HTTP/JSON)
+┌───────────────────────▼─────────────────────────────────────┐
+│                    Backend API (Go)                         │
+│          Chi Router + Firebase Admin SDK                    │
+└───────────────────────┬─────────────────────────────────────┘
+                        │
+        ┌───────────────┴────────────────┐
+        │                                │
+┌───────▼────────┐            ┌──────────▼──────────┐
+│   Firebase     │            │   Cloud Firestore   │
+│ Authentication │            │   (Database NoSQL)  │
+└────────────────┘            └─────────────────────┘
 ```
 
 - ✅ Clean Architecture no backend (Go)
@@ -97,21 +108,6 @@ graph TD
 - ✅ Animações fluidas
 - ✅ Responsivo para todos os dispositivos
 - ✅ Suporte a múltiplos idiomas (preparado)
-
-## 📋 Mapeamento de Telas
-
-<div align="center">
-  <img src="./docs/login.png" width="200" alt="Login"/>
-  <img src="./docs/home.png" width="200" alt="Home"/>
-  <img src="./docs/transactions.png" width="200" alt="Transações"/>
-  <img src="./docs/accounts.png" width="200" alt="Contas"/>
-</div>
-
-<div align="center">
-  <img src="./docs/reports.png" width="200" alt="Relatórios"/>
-  <img src="./docs/profile.png" width="200" alt="Perfil"/>
-  <img src="./docs/onboarding.png" width="200" alt="Onboarding"/>
-</div>
 
 ## 🚀 Estrutura do Projeto
 

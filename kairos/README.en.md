@@ -13,13 +13,24 @@ In Greek mythology, Kairos represents the right moment, the perfect opportunity.
 
 The project follows a microservices architecture with a clear separation between frontend and backend:
 
-```mermaid
-graph TD
-    A[Mobile Apps (iOS/Android/Web)] --> B[REST API (HTTP/JSON)]
-    B --> C[API Backend (Go)]
-    C --> D[Chi Router + Firebase Admin SDK]
-    D --> E[Firebase Authentication]
-    E --> F[Cloud Firestore (NoSQL Database)]
+```
+┌─────────────────────────────────────────────────────────────┐
+│                     Mobile Apps (iOS/Android/Web)           │
+│              React Native + Expo + TypeScript               │
+└───────────────────────┬─────────────────────────────────────┘
+                        │ REST API
+                        │ (HTTP/JSON)
+┌───────────────────────▼─────────────────────────────────────┐
+│                    Backend API (Go)                         │
+│          Chi Router + Firebase Admin SDK                    │
+└───────────────────────┬─────────────────────────────────────┘
+                        │
+        ┌───────────────┴────────────────┐
+        │                                │
+┌───────▼────────┐            ┌──────────▼──────────┐
+│   Firebase     │            │   Cloud Firestore   │
+│ Authentication │            │   (Database NoSQL)  │
+└────────────────┘            └─────────────────────┘
 ```
 
 - ✅ Clean Architecture in the backend (Go)
@@ -97,21 +108,6 @@ graph TD
 - ✅ Fluid animations
 - ✅ Responsive for all devices
 - ✅ Multi-language support (ready)
-
-## 📋 Screen Mapping
-
-<div align="center">
-  <img src="./docs/login.png" width="200" alt="Login"/>
-  <img src="./docs/home.png" width="200" alt="Home"/>
-  <img src="./docs/transactions.png" width="200" alt="Transactions"/>
-  <img src="./docs/accounts.png" width="200" alt="Accounts"/>
-</div>
-
-<div align="center">
-  <img src="./docs/reports.png" width="200" alt="Reports"/>
-  <img src="./docs/profile.png" width="200" alt="Profile"/>
-  <img src="./docs/onboarding.png" width="200" alt="Onboarding"/>
-</div>
 
 ## 🚀 Project Structure
 
