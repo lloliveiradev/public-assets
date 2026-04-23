@@ -1,18 +1,3 @@
-# Solon - Smart Notes
-
-<div align="center">
-  <div align="center" style="background-color: #fff; padding-top: 10px; padding-bottom: 5px">
-    <img src="./logo.png" alt="Solon Logo" width="150"/>
-  </div>
-  
-  [![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)](https://expo.dev)
-  [![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactnative.dev)
-  [![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)](https://nestjs.com)
-  [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
-  [![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
-  [![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)](https://cloud.google.com)
-</div>
-
 ## 📱 About the Project
 
 Solon is a smart notes application that combines the power of AI with a modern mobile interface. The app offers an intuitive experience for creating, organizing, and managing notes, with advanced features such as voice recognition, AI-powered text processing, and cloud synchronization.
@@ -69,19 +54,11 @@ The project is structured in three main parts:
 ## 🛠️ Key Features
 
 ### 📝 Note Edition
-<div align="center">
-  <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/note.jpeg" alt="Note Edition" height="600"/>
-</div>
-
 - Voice recognition support
 - Tags and markers for precise searches
 - Real-time synchronization
 
 ### 🗂️ Smart Organization
-<div align="center">
-  <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/formalize.jpeg" alt="Smart Organization" height="600"/>
-</div>
-
 - **Summarization**: Generates concise summaries while maintaining key ideas
 - **Text Correction**: Automatically fixes grammar and spelling errors
 - **Topic Extraction**: Identifies and extracts main topics from notes
@@ -90,23 +67,11 @@ The project is structured in three main parts:
 ## 📋 Screen Mapping
 
 ### Authentication
-<div align="center">
-  <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/login.jpeg" alt="Login" height="600"/>
-  <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/sign-up.jpeg" alt="Sign Up" height="600"/>
-</div>
-
 - Secure authentication with Firebase Auth
 - Email and password login
 - Simple registration process
 
 ### Main Features
-<div align="center">
-  <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/home.jpeg" alt="Home" height="600"/>
-  <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/search.jpeg" alt="Search" height="600"/>
-  <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/archive.jpeg" alt="Archive" height="600"/>
-  <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/profile.jpeg" alt="Profile" height="600"/>
-</div>
-
 - Dashboard with recent notes
 - Smart search functionality
 - Archive for organizing notes

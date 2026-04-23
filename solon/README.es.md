@@ -1,18 +1,3 @@
-# Solon - Notas Inteligentes
-
-<div align="center">
-  <div align="center" style="background-color: #fff; padding-top: 10px; padding-bottom: 5px">
-    <img src="./logo.png" alt="Solon Logo" width="150"/>
-  </div>
-  
-  [![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)](https://expo.dev)
-  [![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactnative.dev)
-  [![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)](https://nestjs.com)
-  [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
-  [![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
-  [![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)](https://cloud.google.com)
-</div>
-
 ## 📱 Acerca del Proyecto
 
 Solon es una aplicación de notas inteligente que combina el poder de la IA con una interfaz móvil moderna. La aplicación ofrece una experiencia intuitiva para crear, organizar y gestionar notas, con funciones avanzadas como reconocimiento de voz, procesamiento de texto basado en IA y sincronización en la nube.
@@ -69,19 +54,11 @@ El proyecto se estructura en tres partes principales:
 ## 🛠️ Funciones Principales
 
 ### 📝 Edición de Notas
-<div align="center">
-  <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/note.jpeg" alt="Edición de Notas" height="600"/>
-</div>
-
 - Soporte de reconocimiento de voz
 - Etiquetas y marcadores para búsquedas precisas
 - Sincronización en tiempo real
 
 ### 🗂️ Organización Inteligente
-<div align="center">
-  <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/formalize.jpeg" alt="Organización Inteligente" height="600"/>
-</div>
-
 - **Resumen**: Genera resúmenes concisos manteniendo las ideas principales
 - **Corrección de Texto**: Corrige automáticamente errores gramaticales y ortográficos
 - **Extracción de Temas**: Identifica y extrae los temas principales de las notas
@@ -90,23 +67,11 @@ El proyecto se estructura en tres partes principales:
 ## 📋 Mapa de Pantallas
 
 ### Autenticación
-<div align="center">
-  <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/login.jpeg" alt="Login" height="600"/>
-  <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/sign-up.jpeg" alt="Registro" height="600"/>
-</div>
-
 - Autenticación segura con Firebase Auth
 - Inicio de sesión con correo y contraseña
 - Proceso de registro sencillo
 
 ### Funciones Principales
-<div align="center">
-  <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/home.jpeg" alt="Inicio" height="600"/>
-  <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/search.jpeg" alt="Búsqueda" height="600"/>
-  <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/archive.jpeg" alt="Archivo" height="600"/>
-  <img src="https://github.com/lloliveiradev/public-assets/raw/main/solon/profile.jpeg" alt="Perfil" height="600"/>
-</div>
-
 - Panel (*dashboard*) con notas recientes
 - Funcionalidad de búsqueda inteligente
 - Archivo para organizar notas
