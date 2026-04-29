@@ -13,7 +13,7 @@ In Greek mythology, Kairos represents the right moment, the perfect opportunity.
 
 The project follows a microservices architecture with a clear separation between frontend and backend:
 
-```
+```bash
 ┌─────────────────────────────────────────────────────────────┐
 │                     Mobile Apps (iOS/Android/Web)           │
 │              React Native + Expo + TypeScript               │
@@ -111,7 +111,7 @@ The project follows a microservices architecture with a clear separation between
 
 ## 🚀 Project Structure
 
-```
+```bash
 kairos/
 ├── frontend/                   # Mobile app (React Native + Expo)
 │   ├── src/
