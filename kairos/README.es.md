@@ -13,33 +13,20 @@ En la mitología griega, Kairos representa el momento oportuno, la oportunidad p
 
 El proyecto sigue una arquitectura de microservicios con una clara separación entre frontend y backend:
 
-```bash
-┌─────────────────────────────────────────────────────────────┐
-│                     Mobile Apps (iOS/Android/Web)           │
-│              React Native + Expo + TypeScript               │
-└───────────────────────┬─────────────────────────────────────┘
-                        │ REST API
-                        │ (HTTP/JSON)
-┌───────────────────────▼─────────────────────────────────────┐
-│                    Backend API (Go)                         │
-│          Chi Router + Firebase Admin SDK                    │
-└───────────────────────┬─────────────────────────────────────┘
-                        │
-        ┌───────────────┴────────────────┐
-        │                                │
-┌───────▼────────┐            ┌──────────▼──────────┐
-│   Firebase     │            │   Cloud Firestore   │
-│ Authentication │            │   (Database NoSQL)  │
-└────────────────┘            └─────────────────────┘
-```
+- **Frontend**: Aplicaciones Móviles (iOS/Android/Web) desarrolladas con React Native, Expo y TypeScript.
+- **Comunicación**: API REST utilizando HTTP/JSON.
+- **Backend**: API desarrollada en Go, Chi Router y Firebase Admin SDK.
+- **Infraestructura**:
+  - **Firebase Authentication**: Autenticación segura de usuarios.
+  - **Cloud Firestore**: Base de datos NoSQL escalable.
 
-- ✅ Clean Architecture en el backend (Go)
-- ✅ Basado en Componentes en el frontend (React Native)
-- ✅ API RESTful para la comunicación
-- ✅ Enrutamiento basado en archivos con Expo Router
-- ✅ Seguridad de Tipos con TypeScript y Go
-- ✅ Inyección de Dependencias e Inversión de Control
-- ✅ Patrón Repository para la abstracción de datos
+✅ Clean Architecture en el backend (Go)
+✅ Basado en Componentes en el frontend (React Native)
+✅ API RESTful para la comunicación
+✅ Enrutamiento basado en archivos con Expo Router
+✅ Seguridad de Tipos con TypeScript y Go
+✅ Inyección de Dependencias e Inversión de Control
+✅ Patrón Repository para la abstracción de datos
 
 ## 🛠️ Tecnologías
 

@@ -13,33 +13,20 @@ Na mitologia grega, Kairos representa o momento certo, a oportunidade perfeita. 
 
 O projeto segue uma arquitetura de microserviços com separação clara entre frontend e backend:
 
-```bash
-┌─────────────────────────────────────────────────────────────┐
-│                     Mobile Apps (iOS/Android/Web)           │
-│              React Native + Expo + TypeScript               │
-└───────────────────────┬─────────────────────────────────────┘
-                        │ REST API
-                        │ (HTTP/JSON)
-┌───────────────────────▼─────────────────────────────────────┐
-│                    Backend API (Go)                         │
-│          Chi Router + Firebase Admin SDK                    │
-└───────────────────────┬─────────────────────────────────────┘
-                        │
-        ┌───────────────┴────────────────┐
-        │                                │
-┌───────▼────────┐            ┌──────────▼──────────┐
-│   Firebase     │            │   Cloud Firestore   │
-│ Authentication │            │   (Database NoSQL)  │
-└────────────────┘            └─────────────────────┘
-```
+- **Frontend**: Mobile Apps (iOS/Android/Web) desenvolvidos com React Native, Expo e TypeScript.
+- **Comunicação**: API REST utilizando HTTP/JSON.
+- **Backend**: API desenvolvida em Go, Chi Router e Firebase Admin SDK.
+- **Infraestrutura**:
+  - **Firebase Authentication**: Autenticação segura de usuários.
+  - **Cloud Firestore**: Banco de dados NoSQL escalável.
 
-- ✅ Clean Architecture no backend (Go)
-- ✅ Component-Based no frontend (React Native)
-- ✅ RESTful API para comunicação
-- ✅ File-based Routing com Expo Router
-- ✅ Type Safety com TypeScript e Go
-- ✅ Dependency Injection e inversão de controle
-- ✅ Repository Pattern para abstração de dados
+✅ Clean Architecture no backend (Go)
+✅ Component-Based no frontend (React Native)
+✅ RESTful API para comunicação
+✅ File-based Routing com Expo Router
+✅ Type Safety com TypeScript e Go
+✅ Dependency Injection e inversão de controle
+✅ Repository Pattern para abstração de dados
 
 ## 🛠️ Tecnologias
 

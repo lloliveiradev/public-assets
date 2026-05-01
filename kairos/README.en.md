@@ -13,33 +13,20 @@ In Greek mythology, Kairos represents the right moment, the perfect opportunity.
 
 The project follows a microservices architecture with a clear separation between frontend and backend:
 
-```bash
-┌─────────────────────────────────────────────────────────────┐
-│                     Mobile Apps (iOS/Android/Web)           │
-│              React Native + Expo + TypeScript               │
-└───────────────────────┬─────────────────────────────────────┘
-                        │ REST API
-                        │ (HTTP/JSON)
-┌───────────────────────▼─────────────────────────────────────┐
-│                    Backend API (Go)                         │
-│          Chi Router + Firebase Admin SDK                    │
-└───────────────────────┬─────────────────────────────────────┘
-                        │
-        ┌───────────────┴────────────────┐
-        │                                │
-┌───────▼────────┐            ┌──────────▼──────────┐
-│   Firebase     │            │   Cloud Firestore   │
-│ Authentication │            │   (Database NoSQL)  │
-└────────────────┘            └─────────────────────┘
-```
+- **Frontend**: Mobile Apps (iOS/Android/Web) built with React Native, Expo, and TypeScript.
+- **Communication**: REST API using HTTP/JSON.
+- **Backend**: API built with Go, Chi Router, and Firebase Admin SDK.
+- **Infrastructure**:
+  - **Firebase Authentication**: Secure user authentication.
+  - **Cloud Firestore**: Scalable NoSQL database.
 
-- ✅ Clean Architecture in the backend (Go)
-- ✅ Component-Based in the frontend (React Native)
-- ✅ RESTful API for communication
-- ✅ File-based Routing with Expo Router
-- ✅ Type Safety with TypeScript and Go
-- ✅ Dependency Injection and Inversion of Control
-- ✅ Repository Pattern for data abstraction
+✅ Clean Architecture in the backend (Go)
+✅ Component-Based in the frontend (React Native)
+✅ RESTful API for communication
+✅ File-based Routing with Expo Router
+✅ Type Safety with TypeScript and Go
+✅ Dependency Injection and Inversion of Control
+✅ Repository Pattern for data abstraction
 
 ## 🛠️ Technologies
 
