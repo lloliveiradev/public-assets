@@ -13,11 +13,11 @@ A Go service owns merchants, API keys and payment intents. A NestJS worker score
 - **Merchant dashboard (Next.js)**: payment screens in Portuguese, English and Spanish.
 - **Messaging (Kafka)**: state and event are written in the same transaction (outbox) and consumers avoid duplicates (inbox).
 
-✅ Strategic DDD, with one bounded context per domain (identity, payments and fraud)
-✅ Hexagonal architecture: `domain → application → infra`
-✅ Contracts as the source of truth: OpenAPI and AsyncAPI generate the Go and TypeScript types
-✅ Synchronous decisions, asynchronous facts
-✅ Fail closed: when in doubt, the system holds or rejects, never approves
+- ✅ Strategic DDD, with one bounded context per domain (identity, payments and fraud)
+- ✅ Hexagonal architecture: `domain → application → infra`
+- ✅ Contracts as the source of truth: OpenAPI and AsyncAPI generate the Go and TypeScript types
+- ✅ Synchronous decisions, asynchronous facts
+- ✅ Fail closed: when in doubt, the system holds or rejects, never approves
 
 ## 🛠️ Technologies
 

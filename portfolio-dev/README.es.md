@@ -13,10 +13,10 @@ Sitio en línea: [lloliveira.dev](https://lloliveira.dev)
 - **Traducción en tres capas**: textos de la interfaz, contenido de la base de datos y secciones estructuradas del currículum.
 - **Contenido versionado en scripts**: cada script lleva los tres idiomas y puede ejecutarse otra vez sin efectos secundarios.
 
-✅ Idioma en la ruta (`/pt`, `/en`, `/es`), sin páginas duplicadas
-✅ Contenido localizado guardado como JSON `{ pt, en, es }` y reducido a texto antes de llegar a la pantalla
-✅ Tema claro y oscuro, con la misma paleta de colores en ambos
-✅ Las imágenes y el README de los proyectos vienen de un repositorio de archivos propio
+- ✅ Idioma en la ruta (`/pt`, `/en`, `/es`), sin páginas duplicadas
+- ✅ Contenido localizado guardado como JSON `{ pt, en, es }` y reducido a texto antes de llegar a la pantalla
+- ✅ Tema claro y oscuro, con la misma paleta de colores en ambos
+- ✅ Las imágenes y el README de los proyectos vienen de un repositorio de archivos propio
 
 ## 🛠️ Tecnologías
 

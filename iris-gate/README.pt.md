@@ -13,11 +13,11 @@ Um serviço em Go cuida de lojistas, chaves de API e intenções de pagamento. U
 - **Painel do lojista (Next.js)**: telas de pagamentos em português, inglês e espanhol.
 - **Mensageria (Kafka)**: o estado e o evento são gravados na mesma transação (outbox) e quem consome evita duplicidade (inbox).
 
-✅ DDD estratégico, com um contexto delimitado por domínio (identidade, pagamentos e fraude)
-✅ Arquitetura hexagonal: `domain → application → infra`
-✅ Contratos como fonte da verdade: OpenAPI e AsyncAPI geram os tipos em Go e TypeScript
-✅ Decisões síncronas, fatos assíncronos
-✅ Falha fechada: na dúvida, o sistema segura ou rejeita, nunca aprova
+- ✅ DDD estratégico, com um contexto delimitado por domínio (identidade, pagamentos e fraude)
+- ✅ Arquitetura hexagonal: `domain → application → infra`
+- ✅ Contratos como fonte da verdade: OpenAPI e AsyncAPI geram os tipos em Go e TypeScript
+- ✅ Decisões síncronas, fatos assíncronos
+- ✅ Falha fechada: na dúvida, o sistema segura ou rejeita, nunca aprova
 
 ## 🛠️ Tecnologias
 

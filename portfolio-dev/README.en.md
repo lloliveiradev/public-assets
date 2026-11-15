@@ -13,10 +13,10 @@ Live site: [lloliveira.dev](https://lloliveira.dev)
 - **Translation in three layers**: interface copy, database content and structured résumé sections.
 - **Content versioned in scripts**: each script carries all three languages and can be run again with no side effects.
 
-✅ Language in the route (`/pt`, `/en`, `/es`), with no duplicated pages
-✅ Localized content stored as `{ pt, en, es }` JSON and reduced to text before it reaches the screen
-✅ Light and dark themes, with the same color palette in both
-✅ Project images and READMEs come from a dedicated assets repository
+- ✅ Language in the route (`/pt`, `/en`, `/es`), with no duplicated pages
+- ✅ Localized content stored as `{ pt, en, es }` JSON and reduced to text before it reaches the screen
+- ✅ Light and dark themes, with the same color palette in both
+- ✅ Project images and READMEs come from a dedicated assets repository
 
 ## 🛠️ Technologies
 

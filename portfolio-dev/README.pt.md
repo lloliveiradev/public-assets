@@ -13,10 +13,10 @@ Site no ar: [lloliveira.dev](https://lloliveira.dev)
 - **Tradução em três camadas**: textos da interface, conteúdo do banco e seções estruturadas do currículo.
 - **Conteúdo versionado em scripts**: cada script carrega os três idiomas e pode ser executado de novo sem efeitos colaterais.
 
-✅ Idioma na rota (`/pt`, `/en`, `/es`), sem páginas duplicadas
-✅ Conteúdo localizado guardado como JSON `{ pt, en, es }` e reduzido a texto antes de chegar à tela
-✅ Tema claro e escuro, com a mesma paleta de cores nos dois
-✅ Imagens e README dos projetos vêm de um repositório de arquivos próprio
+- ✅ Idioma na rota (`/pt`, `/en`, `/es`), sem páginas duplicadas
+- ✅ Conteúdo localizado guardado como JSON `{ pt, en, es }` e reduzido a texto antes de chegar à tela
+- ✅ Tema claro e escuro, com a mesma paleta de cores nos dois
+- ✅ Imagens e README dos projetos vêm de um repositório de arquivos próprio
 
 ## 🛠️ Tecnologias
 

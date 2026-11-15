@@ -13,11 +13,11 @@ Un servicio en Go se encarga de comercios, claves de API e intenciones de pago. 
 - **Panel del comercio (Next.js)**: pantallas de pagos en portugués, inglés y español.
 - **Mensajería (Kafka)**: el estado y el evento se guardan en la misma transacción (outbox) y quien consume evita duplicados (inbox).
 
-✅ DDD estratégico, con un contexto delimitado por dominio (identidad, pagos y fraude)
-✅ Arquitectura hexagonal: `domain → application → infra`
-✅ Contratos como fuente de la verdad: OpenAPI y AsyncAPI generan los tipos en Go y TypeScript
-✅ Decisiones síncronas, hechos asíncronos
-✅ Falla cerrada: ante la duda, el sistema retiene o rechaza, nunca aprueba
+- ✅ DDD estratégico, con un contexto delimitado por dominio (identidad, pagos y fraude)
+- ✅ Arquitectura hexagonal: `domain → application → infra`
+- ✅ Contratos como fuente de la verdad: OpenAPI y AsyncAPI generan los tipos en Go y TypeScript
+- ✅ Decisiones síncronas, hechos asíncronos
+- ✅ Falla cerrada: ante la duda, el sistema retiene o rechaza, nunca aprueba
 
 ## 🛠️ Tecnologías
 
