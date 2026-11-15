@@ -28,35 +28,6 @@ Cada incidente recorre un pipeline de cinco etapas:
 - ✅ Políticas, catálogo de acciones y SLOs gestionados en el Control Plane
 - ✅ Laboratorio local con un clúster de prueba, separado del producto
 
-## 🛠️ Tecnologías
-
-### Backend
-- [Python](https://www.python.org) - Workers, ingesta, gateway y Operator
-- [Go](https://go.dev) - Workers de remediación y verificación
-- [Django](https://www.djangoproject.com) y [Django REST Framework](https://www.django-rest-framework.org) - Control Plane
-- [FastAPI](https://fastapi.tiangolo.com) - Ingesta y gateway de herramientas
-- [Temporal](https://temporal.io) - Orquestación de workflows
-- [Gemini](https://ai.google.dev) - Diagnóstico con IA generativa
-
-### Frontend
-- [Next.js](https://nextjs.org) y [React](https://react.dev) - Consola web
-- [TypeScript](https://www.typescriptlang.org) - Tipado
-- [Tailwind CSS](https://tailwindcss.com) y [shadcn/ui](https://ui.shadcn.com) - Interfaz
-- [next-intl](https://next-intl.dev) - Portugués e inglés
-- [TanStack Query](https://tanstack.com/query) y [TanStack Table](https://tanstack.com/table) - Datos y tablas
-
-### Datos y observabilidad
-- [PostgreSQL](https://www.postgresql.org) - Base del Control Plane y de Temporal
-- [Redis](https://redis.io) - Límite de tasa y circuit breaker compartidos
-- [Prometheus](https://prometheus.io), [Grafana](https://grafana.com) y [Loki](https://grafana.com/oss/loki) - Métricas, paneles y logs
-- [OpenTelemetry](https://opentelemetry.io) y [Jaeger](https://www.jaegertracing.io) - Trazas
-- [ClickHouse](https://clickhouse.com) - Backend opcional para trazas, logs y métricas
-
-### Infraestructura
-- [Kubernetes](https://kubernetes.io) y [k3s](https://k3s.io) - Clúster del laboratorio
-- [Docker Compose](https://docs.docker.com/compose) - Entorno local
-- [Infisical](https://infisical.com) - Gestión de secretos
-
 ## 🛠️ Principales Recursos
 
 ### 🤖 Respuesta a incidentes
@@ -78,29 +49,3 @@ Cada incidente recorre un pipeline de cinco etapas:
 ### 📈 Observabilidad de la propia plataforma
 - ✅ Métricas por actividad (latencia, llamadas, errores y costo estimado de tokens)
 - ✅ Trazas con OpenTelemetry y endpoints de salud
-
-## 🚀 Estructura del Proyecto
-
-```bash
-aiops-k8s/
-├── apps/
-│   ├── api/          # Control Plane (Django REST)
-│   ├── web/          # Consola web (Next.js)
-│   ├── services/     # Ingesta y gateway de herramientas
-│   ├── workers/      # Workers de Temporal en Python y Go
-│   └── operator/     # Operator que observa los eventos del clúster
-├── packages/
-│   ├── aiops-shared/ # Contratos y nombres de tablas
-│   └── config/       # Políticas y catálogo de herramientas
-├── infra/            # Clúster del laboratorio y observabilidad
-├── docs/             # Contratos, workers, gateway y arquitectura
-└── docker-compose.yaml
-```
-
-## 🧪 Laboratorio Local
-
-Todo el stack levanta con Docker Compose (`make dev-up`): un clúster k3s, Temporal, Postgres, la observabilidad y los workers. Cargas de prueba (una API de demostración, un generador de carga y un inyector de fallas) simulan el clúster de un cliente para validar el flujo de punta a punta.
-
-## 📄 Licencia
-
-Este proyecto está licenciado bajo la Licencia MIT.

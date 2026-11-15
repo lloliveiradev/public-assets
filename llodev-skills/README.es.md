@@ -4,31 +4,6 @@
 
 Cada skill de este repositorio se distribuye como **paquete npm**, **plugin de Claude Code** y **entrada `skills add` de Vercel**. Elige el canal que hable tu agente — las skills son idénticas en los tres.
 
-## Instalación
-
-Elige el canal que encaje con tu agente.
-
-**Claude Code (o cualquier agente que soporte el marketplace):**
-
-```bash
-/plugin marketplace add llodev/skills
-/plugin install pm-tasks-core pm-tasks-trello pm-tasks-asana
-```
-
-**npm (skillpm, skills-npm o bundling en `node_modules`):**
-
-```bash
-npm i @llodev/pm-tasks    # meta — instala toda la familia vía peerDeps
-```
-
-**Vercel `skills add`:**
-
-```bash
-npx skills add llodev/skills/skills/pm-tasks-trello
-```
-
-Consulta la [guía de publicación](../../docs/publishing-guide.md) para ver cómo se conectan los tres canales.
-
 ## Catálogo
 
 ### `pm-tasks-*` — adaptadores de Project Management
@@ -93,60 +68,3 @@ Skills puras de **conocimiento** para construir un codebase TypeScript + DDD —
 Cada skill publicada declara qué agentes soporta en el campo `compatibility.agents` de su frontmatter. La matriz actual:
 
 > **Claude Code** · **Cursor** · **Codex** · **Windsurf** · **Cline** · **Roo Code** (Gemini CLI parcial vía capa de traducción)
-
-## Layout del repositorio
-
-Las skills viven planas bajo `skills/` (un directorio por skill, la convención
-que esperan los indexadores de skills); la pertenencia a la familia se indica con
-el prefijo `pm-tasks-` en el nombre y el campo `metadata.family` de cada skill, no
-con el anidamiento de directorios. Los paquetes que no son skills (meta-paquete,
-testkit) viven bajo `packages/`.
-
-```
-.
-├── skills/                    Todas las skills — planas, un directorio cada una
-│   ├── pm-tasks-core/         Extracción compartida + vocabulario CRUD (family: pm-tasks)
-│   ├── pm-tasks-asana/        Adaptador Asana (parent + subtasks, custom fields, sections)
-│   ├── pm-tasks-trello/       Adaptador Trello (boards, lists, labels, members)
-│   ├── pm-tasks-jira/         Adaptador Jira (epics, estimaciones, transiciones)
-│   ├── pm-tasks-linear/       Adaptador Linear (cycles, labels, campos temporales nativos)
-│   ├── django-schema-design/  Diseño de esquema: estrategia de PK, índices, constraints, migraciones
-│   ├── ts-ddd-entity/         Entidades de dominio: Entity base, Result.combine, transiciones cloneWith
-│   ├── ts-ddd-value-object/   Value objects: VOs closed-set + compuestos, tryCreate/create
-│   ├── ts-ddd-dto/            DTOs & contracts: schemas Zod 4, tipos z.infer, enums closed-set
-│   ├── ts-ddd-use-case/       Use cases de aplicación: UseCase<IN,OUT>, orquestación vía repo-port
-│   ├── ts-ddd-repository/     Repository ports + adaptadores: par Firestore/InMemory, DI token
-│   ├── ts-ddd-controller/     Controllers HTTP: rutas, guards, validación Zod, Result→HTTP
-│   ├── ts-ddd-domain-service/ Domain services: policies/calculadoras stateless que retornan Result
-│   └── ts-query-cqrs/         CQRS de lectura: *Query ports, read use cases find-*, proyecciones
-├── packages/                  Paquetes de workspace que no son skills (sin SKILL.md)
-│   ├── pm-tasks/              Meta-paquete — instala toda la familia pm-tasks
-│   ├── pm-tasks-testkit/      Fakes en memoria para los verbos CRUD canónicos
-│   └── ts-ddd/                Meta-paquete — instala toda la familia ts-ddd
-├── scripts/                   Validadores, checks de contrato, gate de baseline de skill-judge
-├── docs/                      publishing-guide.md
-└── .changeset/                Registros de intención de release (workflow Changesets)
-```
-
-## Desarrollo local
-
-```bash
-make hooks       # una vez — instala lefthook (prettier sobre staged, gitleaks, Conventional Commits)
-make validate    # checks de frontmatter + schema + links + paridad de locale
-make help        # lista completa de targets
-```
-
-> [!TIP]
-> El `Makefile` es el punto de entrada canónico — más corto que recordar los nombres de scripts de pnpm y el único exigido por lefthook en el commit.
-
-Las releases siguen el workflow [Changesets](https://github.com/changesets/changesets) — registra la intención con `make changeset`, aplica con `make release-version`, publica con `make release-publish`. Consulta [`.changeset/README.md`](../../.changeset/README.md) para el paso a paso.
-
-## Docs
-
-- [Guía de publicación](../../docs/publishing-guide.md) — cómo se conectan los tres canales de distribución.
-- [Workflow Changesets](../../.changeset/README.md) — registrar → versionar → publicar.
-- Los deep dives de cada familia viven en el `SKILL.md` y `references/` de cada miembro.
-
-## Licencia
-
-MIT — consulta [LICENSE](../../LICENSE).
